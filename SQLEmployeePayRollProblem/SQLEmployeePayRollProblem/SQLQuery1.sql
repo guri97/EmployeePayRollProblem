@@ -17,3 +17,10 @@ VALUES('Abhishek','2020-02-02'),('Hitesh','2019-07-01');
 -----retrive data UC4---------
 SELECT * FROM  employee_payroll;--to retrive all the data---------
 SELECT Id,Name FROM  employee_payroll;------to retrive id and name-----------
+--------UC5 retrive accoring to data and particular employee-----
+SELECT * FROM  employee_payroll where Name='Singh' or Name='Gurpreet';
+----------to get the d/f colum-------
+SELECT * FROM  employee_payroll where Name='Singh' or Salary=50001;
+
+----------------UC5 retrive according to the start date range-------------
+SELECT * FROM  employee_payroll where StartDate between CAST('2019-04-01' as date) and GETDATE();
