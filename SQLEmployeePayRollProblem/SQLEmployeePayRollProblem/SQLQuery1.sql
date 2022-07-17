@@ -8,3 +8,9 @@ Name varchar(200),
 Salary float,
 StartDate datetime
 );
+---------to insert data into the table UC3--------------
+INSERT INTO employee_payroll
+VALUES('Kalpak',50002,'2008-02-02','M'),('Sourav',50003,'2011-04-01','M');
+
+INSERT INTO employee_payroll(Name,StartDate)
+VALUES('Abhishek','2020-02-02'),('Hitesh','2019-07-01');
