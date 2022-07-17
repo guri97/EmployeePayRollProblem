@@ -24,3 +24,9 @@ SELECT * FROM  employee_payroll where Name='Singh' or Salary=50001;
 
 ----------------UC5 retrive according to the start date range-------------
 SELECT * FROM  employee_payroll where StartDate between CAST('2019-04-01' as date) and GETDATE();
+------------UC6-we have to add the other column as a gender to existing table------------
+ALTER TABLE employee_payroll
+ADD Gender char(1); 
+UPDATE employee_payroll set Gender='M';
+UPDATE employee_payroll set Salary=60000 where Name='Gurpreet';
+UPDATE employee_payroll set Salary=60001,StartDate=getdate() where Name='Gurpreet';
