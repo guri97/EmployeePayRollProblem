@@ -147,3 +147,14 @@ insert into Employee values
 	(004,'Prakash','M',900000,'2018-07-05','8638527410','Haryana',504,114);
 
 select * from Employee
+-----------UC12-checking with UC-4,5,7----------
+SELECT* FROM  Employee;
+
+
+
+SELECT SUM(Basic_pay) as TotalSalary from Employee;
+SELECT avg(Basic_pay) as AvergeSalary from Employee;
+SELECT  MIN(Basic_pay) as MINIMUMSalary from Employee;
+SELECT MAX(Basic_pay) as MaximumSalary from Employee;
+SELECT COUNT(Basic_pay)as countofemployee from Employee;
+
